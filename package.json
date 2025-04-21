@@ -1,0 +1,20 @@
+{
+  "name": "user-dashboard",
+  "version": "1.0.0",
+  "description": "User Dashboard with Data Grid",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "datagrid"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
